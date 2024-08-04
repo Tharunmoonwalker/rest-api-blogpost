@@ -1,0 +1,41 @@
+[debug] [2024-08-04T03:53:18.282Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T03:53:18.285Z] Command:       /usr/local/bin/firebase /home/tharun/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2024-08-04T03:53:18.286Z] CLI Version:   13.15.0
+[debug] [2024-08-04T03:53:18.286Z] Platform:      linux
+[debug] [2024-08-04T03:53:18.286Z] Node Version:  v18.5.0
+[debug] [2024-08-04T03:53:18.287Z] Time:          Sun Aug 04 2024 09:23:18 GMT+0530 (India Standard Time)
+[debug] [2024-08-04T03:53:18.288Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T03:53:18.297Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T03:53:18.298Z] > authorizing via signed-in user (karthicktharun11@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/tharun/Downloads/rest_api/mysite
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-04T03:53:23.440Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2024-08-04T03:53:24.706Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2024-08-04T03:53:24.707Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2024-08-04T03:53:32.856Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/tharunkarthick:addFirebase [none]
+[debug] [2024-08-04T03:53:33.486Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/tharunkarthick:addFirebase 403
+[debug] [2024-08-04T03:53:33.486Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/tharunkarthick:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-08-04T03:53:33.487Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-08-04T03:53:33.680Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/home/tharun/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/home/tharun/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
